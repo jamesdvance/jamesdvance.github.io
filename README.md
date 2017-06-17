@@ -478,6 +478,24 @@ If you have a different question, please ask using [Discussions](https://github.
 7. **Q:** When trying to deploy, it's asking for github login credentials, which github disabled password authentication and it exits with an error. How to fix?     <br>
    **A:** Open .git/config file using your preferred editor. Change the `https` portion of the `url` variable to `ssh`. Try deploying again.
 
+### Installation
+
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first fork the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
+
+```bash
+$ git clone git@github.com:<your-username>/<your-repo-name>.git
+$ cd <your-repo-name>
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+Now, feel free to customize the theme however you like (don't forget to change the name!).
+After you are done, you can deploy it to [GitHub Pages](https://pages.github.com/) by running the deploy script:
+
+```bash
+$ ./bin/deploy
+```
+
 ## Features
 
 ### Publications
