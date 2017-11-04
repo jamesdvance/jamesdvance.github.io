@@ -106,6 +106,8 @@ wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
+
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
