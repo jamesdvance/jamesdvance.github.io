@@ -64,7 +64,7 @@ serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
-# Social integration: modify for your profiles or delete
+# Social integration
 # -----------------------------------------------------------------------------
 
 github_username: jamesdvance # your GitHub user name
