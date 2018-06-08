@@ -500,12 +500,16 @@ By default, the script uses the `master` branch for the source code and deploys 
 The optional flag `--user` tells it to deploy to `master` and use `source` for the source code instead.
 Using `master` for deployment is a convention for [user and organization pages](https://help.github.com/articles/user-organization-and-project-pages/).
 
-**Note:** when deploying your user or organization page, make the `_config.yml` has `url` and `baseurl` fields as follows.
+**Note:** when deploying your user or organization page, make sure the `_config.yml` has `url` and `baseurl` fields as follows.
 
 ```
 url: # should be empty
 baseurl:  # should be empty
 ```
+
+### Usage ###
+
+Note that `_pages/about.md` is built to index.html in the published site. There is therefore no need to have a separate index page for the project. If an index page does exist in the root directory then this will prevent `_pages/about.md` from being added to the built site.
 
 ## Features
 
