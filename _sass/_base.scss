@@ -1059,3 +1059,13 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+
+// Distill
+
+.distill {
+  a:hover {
+    border-bottom-color: $theme-color;
+    text-decoration: none;
+  }
+}
