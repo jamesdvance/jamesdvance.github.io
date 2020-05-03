@@ -98,16 +98,10 @@
         {{ content }}
       </d-article>
 
-        <d-article>
-          {{ content }}
-        </d-article>
-
-        <d-appendix>
-          <d-footnote-list></d-footnote-list>
-          <d-citation-list></d-citation-list>
-        </d-appendix>
-
-      </div>
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
       <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
 
