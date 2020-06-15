@@ -25,7 +25,3 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
-# group :bootstrap do
-#     gem 'bootstrap'
-#     gem 'material-sass'
-# end
