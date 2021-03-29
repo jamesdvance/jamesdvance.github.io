@@ -219,6 +219,7 @@ blockquote {
   background-color: var(--global-bg-color);
   opacity: 0.95;
   background-color: var(--global-bg-color);
+  opacity: 0.95;
 }
 
 .navbar .dropdown-menu {
@@ -1089,8 +1090,13 @@ nav[data-toggle="toc"] {
       }
     }
   }
-  .card img {
-    width: 100%;
+  .card { 
+    img {
+      width: 100%;
+    }
+    .card-title {
+      color: $black-color;
+    }
   }
 }
 
@@ -1217,9 +1223,30 @@ nav[data-toggle="toc"] {
 }
 
 // Rouge Color Customization
+figure.highlight {
+  margin: 0 0 1rem;
+}
+
+pre {
+  color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+  pre, code {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
 code {
   color: var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  border-radius: 3px;
+  padding: 3px 3px;
 }
+
+
 // Transitioning Themes
 html.transition,
 html.transition *,
