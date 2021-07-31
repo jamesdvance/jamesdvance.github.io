@@ -301,6 +301,7 @@ scholar:
 
   replace_strings: true
   join_strings: true
+  bibtex_filters:
 
   details_dir: bibliography
   details_layout: bibtex.html
