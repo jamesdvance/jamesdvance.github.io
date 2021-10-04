@@ -240,6 +240,8 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
