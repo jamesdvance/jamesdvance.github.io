@@ -280,6 +280,11 @@ Neural Compression (ICLR: <a href="https://neuralcompression.github.io/" target=
 </table>
 
 
+## Best practices
+
+<img align="center" src="https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/pagespeed.svg">
+
+
 ## Getting started
 
 Want to learn more about Jekyll? Check out [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
