@@ -574,7 +574,7 @@ If you have a different question, please ask using [Discussions](https://github.
 
 ### Installation
 
-For a hands-on walkthrough al-folio installation, check out [this cool video tutorial](https://www.youtube.com/watch?v=g6AJ9qPPoyc) by one of the community members! 🎬 🍿
+For a hands-on walkthrough of al-folio installation, check out [this cool video tutorial](https://www.youtube.com/watch?v=g6AJ9qPPoyc) by one of the community members! 🎬 🍿
 
 ---
 
