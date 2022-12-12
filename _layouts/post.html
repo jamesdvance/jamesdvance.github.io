@@ -75,6 +75,9 @@ layout: default
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
   </div>
   {%- endif %}
+  {%- if site.giscus.repo and page.giscus_comments -%}
+    {% include giscus.html %}
+  {%- endif -%}
 
   {%- if site.related_blog_posts.enabled -%}
     {%- if page.related_posts == null or page.related_posts -%}
