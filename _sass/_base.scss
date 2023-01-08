@@ -1197,6 +1197,18 @@ nav[data-toggle="toc"] {
           }
         }
       }
+      .badges {
+        span {
+          display: inline-block;
+          color: $black-color;
+          height: 100%;
+          padding-left: 0.5rem;
+          vertical-align: middle;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
