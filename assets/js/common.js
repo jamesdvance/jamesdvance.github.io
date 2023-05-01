@@ -1,3 +1,4 @@
+// add toggle functionality to abstract and bibtex buttons
 $(document).ready(function() {
   // add toggle functionality to abstract and bibtex buttons
   $('a.abstract').click(function() {
