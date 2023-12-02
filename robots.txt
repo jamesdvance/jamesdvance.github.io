@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jamesdvance.com/blog/sitemap.xml
+Sitemap: https://jamesdvance.github.io/sitemap.xml
