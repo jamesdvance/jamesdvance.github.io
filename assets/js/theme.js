@@ -8,10 +8,15 @@ let toggleTheme = (theme) => {
   }
 };
 
+
 let setTheme = (theme) => {
   transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
+  // if mermaid is not defined, do nothing
+  if (typeof mermaid !== 'undefined') {
+    setMermaidTheme(theme);
+  }
 
   if (theme) {
     document.documentElement.setAttribute("data-theme", theme);
@@ -56,6 +61,7 @@ let setTheme = (theme) => {
   }
 };
 
+
 let setHighlight = (theme) => {
   if (theme == "dark") {
     document.getElementById("highlight_theme_light").media = "none";
@@ -65,6 +71,7 @@ let setHighlight = (theme) => {
     document.getElementById("highlight_theme_light").media = "";
   }
 };
+
 
 let setGiscusTheme = (theme) => {
   function sendMessage(message) {
@@ -101,6 +108,7 @@ let transTheme = () => {
   }, 500);
 };
 
+
 let initTheme = (theme) => {
   if (theme == null || theme == "null") {
     const userPref = window.matchMedia;
@@ -114,3 +122,12 @@ let initTheme = (theme) => {
 
 
 initTheme(localStorage.getItem("theme"));
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mode_toggle = document.getElementById("light-toggle");
+
+    mode_toggle.addEventListener("click", function() {
+        toggleTheme(localStorage.getItem("theme"));
+    });
+});
