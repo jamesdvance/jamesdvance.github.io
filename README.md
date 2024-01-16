@@ -205,6 +205,7 @@ Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github
   - [Contributing](#contributing)
     - [Maintainers](#maintainers)
     - [All Contributors](#all-contributors)
+  - [Star History](#star-history)
   - [License](#license)
 
 ## User community
@@ -902,7 +903,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
   <img src="https://contrib.rocks/image?repo=alshedivat/al-folio" />
 </a>
 
-### Star History
+## Star History
 
 <a href="https://star-history.com/#alshedivat/al-folio&Date">
   <picture>
