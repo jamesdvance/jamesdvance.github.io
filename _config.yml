@@ -164,6 +164,7 @@ blog_name: Latest Posts # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
 blog_description: Getting started posting thoughts on MLOps, Model Training and Faster ML
 permalink: /blog/:year/:title/
+lsi: true # produce an index for related posts
 
 # Pagination
 pagination:
