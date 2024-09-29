@@ -22,18 +22,12 @@
       institution: Amazon
       year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - MLOps
+        - Model deployment
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
 
 - title: Certifications
   type: time_table
