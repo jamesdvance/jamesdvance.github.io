@@ -17,7 +17,6 @@ Your biggest problem can guide the decision. If sub 50 ms latency is your team's
 | Framework | Setup Complexity | Steps To Implement | Inference Abstraction | Experiment Integration | Parallel Workflow | 
 | -- | -- | -- | -- | 
 
-
 ## Resources:
 
 #### Blogs
