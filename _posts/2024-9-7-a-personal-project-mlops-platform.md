@@ -8,7 +8,7 @@ categories: mlops
 featured: true
 ---
 
-## Build A Kubeflow MLOps Platform With Terraform
+## Build vs Buy - Managed MLOps
 
 ### Inspiration
 Machine Learning Engineers need to be able to deploy infrastructure to facilitate develop, train and deploy models as efficiently as possible. Since before the invention of transformers machine learning has depended on quick iteration cycles and feedback loops. But when machine learning teams scale, the quickness of iteration is stimied by reacting to the needs of individual models and problem areas. Some models require distributed GPU clusters, others can be experimented on single CPU. Some have hard-to-configure dependency environments which must be shared seamlessly between scientists. Model serving creates another large layer of complexity, with batch vs online serving, event-driven vs response-based, and CICD requirements. 

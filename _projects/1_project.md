@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: PlanYourMeals.com
+description: 2017 - 2020 Project that chose a diet based on 
 img: assets/img/12.jpg
 importance: 1
 category: work
