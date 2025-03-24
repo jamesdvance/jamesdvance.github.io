@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: jamesdvance # the website title (if blank, full name will be used instead)
+title: James Vance, ML Engineer # the website title (if blank, full name will be used instead)
 first_name: James
 middle_name: D.
 last_name: Vance
@@ -256,8 +256,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["mlops", "career"] # these tags will be displayed on the front page of your blog
+display_categories: ["mlops"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -636,3 +636,66 @@ jsonresume:
   - languages
   - interests
   - references
+
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: jamesdvance # your GitHub user name
+gitlab_username: # your GitLab user name
+x_username: thejamesvance # your X handle
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+linkedin_username: jamesdvance # your LinkedIn user name
+telegram_username: # your Telegram user name
+scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+semanticscholar_id: # your Semantic Scholar ID
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+lattes_id: # your ID on Lattes (Brazilian Lattes CV)
+osf_id: # your OSF ID
+research_gate_profile: # your profile on ResearchGate
+scopus_id: # your profile on Scopus
+flickr_id: # your flickr id
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+lastfm_id: # your lastfm id
+lattes_id: # your ID on Lattes (Brazilian Lattes CV)
+linkedin_username: # your LinkedIn user name
+mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+medium_username: # your Medium username
+orcid_id: # your ORCID ID
+osf_id: # your OSF ID
+pinterest_id: # your pinterest id
+publons_id: # your ID on Publons
+quora_username: # your Quora username
+research_gate_profile: # your profile on ResearchGate
+scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scopus_id: # your profile on Scopus
+semanticscholar_id: # your Semantic Scholar ID
+spotify_id: # your spotify id
+stackoverflow_id: # your stackoverflow id
+telegram_username: # your Telegram user name
+unsplash_id: # your unsplash id
+wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
+dblp_url: # your DBLP profile url
+stackoverflow_id: # your stackoverflow id
+kaggle_id: jamesdvance # your kaggle id
+lastfm_id: # your lastfm id
+spotify_id: # your spotify id
+pinterest_id: # your pinterest id
+unsplash_id: # your unsplash id
+instagram_id: # your instagram id
+facebook_id: # your facebook id
+youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+zotero_username: # your zotero username
+
+contact_note: >
+  You can even add a little note about which of these is the best way to reach you.
