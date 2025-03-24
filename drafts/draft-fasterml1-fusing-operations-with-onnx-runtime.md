@@ -32,7 +32,6 @@ TODO - YoloV8 Inference In Notebook
 ### Python -> Android
 
 
-
 ## Part 4: Graph Optimizations
 
 ### Operator fusion 
