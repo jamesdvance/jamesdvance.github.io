@@ -1,17 +1,12 @@
 ---
 layout: post
-title: The Principal Engineer Paradigm'
+title: The Principal Engineer Paradigm
 date: 2025-02-15 00:00:00
 description: Understanding the Role
 tags: career, 
 categories: career
 featured: true
 ---
-
-
-# The Principal Engineer's Paradig
-
-{% include figure.liquid loading="eager" path="assets/img/seraph-matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 ## Introduction
 As a Sr Engineer in Big Tech, I've been working with Principal Engineer the past month or so. It struck me the extento which the role is distinct role from the Sr, not that they are execute a Sr's functions all the better. 
@@ -23,6 +18,7 @@ Sr. Engineers are trusted to lead designs. They pull off the *how*. Principal En
 Even if its beened signed off on by various stakeholders, engineering managers, and cross-team collaborators, a Principal Eng can come in and question your project's objective, your tools, timelines, and often your sanity. 
 
 ## Are You Sure You Aren't Wrong? 
+{% include figure.liquid loading="eager" path="assets/img/seraph-matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 Your manager may question your methods, but they'll give you the benefit of the doubt. Over the weeks and months they've seen your work and heard your status updates.
 They trust that you'll ultimately deliver and don't spend too much time nit-picking your decisions. A Principal Engineer gives you no such quarter. They ruthlessly question your timeline estimates, your project plans, whether you 
 have thought enough about security, scaling,reliability, and whether you have sufficient test coverage. To err is human, and a PE's job is save you from this natural inclination.  

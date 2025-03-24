@@ -26,4 +26,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-These are my latest thoughts
+Hey, I'm James, a Machine Learning Engineer. I currently work to deploy effective machine learning systems for Amazon's High Volume Hiring group. I'm especially interested in learning how to run ML models leaner and faster and will share these learnings on my blog. 
+
+In the long run, I'm most excited about the intersection of simulation and reinforcement learning and hope to share more in these areas too. 

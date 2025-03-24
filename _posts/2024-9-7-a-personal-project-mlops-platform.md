@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Personal Project MLOps Platform'
+title: A Personal Project MLOps Platform
 date: 2024-12-02 13:11:00
 description: A Basic MLOps Setup With Kubeflow
 tags: mlops, kubeflow, terraform
