@@ -23,7 +23,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 4 # leave blank to include all the blog posts
 ---
 
 Hey, I'm James, a Machine Learning Engineer. I currently work to deploy effective machine learning systems for Amazon's High Volume Hiring group. I'm especially interested in learning how to run ML models leaner and faster and will share these learnings on my blog. 
