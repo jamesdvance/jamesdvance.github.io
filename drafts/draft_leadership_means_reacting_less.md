@@ -7,3 +7,6 @@ It's far harder to plant one's feet and accept the riducule and disbelief and sh
 That's leadership. It's hard, it's stressful and it requires making moves no one will understand or appreciate until a far distant future. But reacting too much to the present isn't leadership. 
 
 This goes for impact more generally (think Geoffery Hinton perservering through not one but two AI Winters)
+
+### Balancing Bias and Variance 
+

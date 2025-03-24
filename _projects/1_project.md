@@ -1,11 +1,10 @@
 ---
 layout: page
 title: PlanYourMeals.com
-description: 2017 - 2020 Project that chose a diet based on 
+description: 2017 - 2020. React / Django project that creates an optimal meal
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 Every project has a beautiful feature showcase page.

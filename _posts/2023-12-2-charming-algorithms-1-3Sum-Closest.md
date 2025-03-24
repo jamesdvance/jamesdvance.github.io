@@ -5,7 +5,7 @@ date: 2023-12-02 13:11:00
 description: Intuition For the solution to '3Sum - Closest'
 tags: algorithms, leetcode
 categories: charming-algorithms
-featured: true
+featured: false
 ---
 
 ## Charming Algorithms 1 : 3Sum (No, not that) Closest

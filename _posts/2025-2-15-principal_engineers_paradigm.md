@@ -1,8 +1,17 @@
-# The Principal Engineer's Paradigm
+---
+layout: post
+title: The Principal Engineer Paradigm'
+date: 2025-02-15 00:00:00
+description: Understanding the Role
+tags: career, 
+categories: career
+featured: true
+---
 
-<p align="center">
-  <img src="assets/img/seraph-matrix.png">
-</p>
+
+# The Principal Engineer's Paradig
+
+{% include figure.liquid loading="eager" path="assets/img/seraph-matrix.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 
 ## Introduction
 As a Sr Engineer in Big Tech, I've been working with Principal Engineer the past month or so. It struck me the extento which the role is distinct role from the Sr, not that they are execute a Sr's functions all the better. 
@@ -38,4 +47,4 @@ the PE will outright annoy you at some point. But if they never make you unhappy
 ## Building This Skill
 A lot of us got into tech for the love of puzzles, the thrill of finding things out, and the commradarie of building things. A good PE experiences little of that. He spends most of his time above the weeds, doesn't stay on a single project, and frequently pisses off engineering managers and Sr Engineers. Yet, if you want to make the biggest technical impact you can, you must develop this separate set of skills. <u>The Staff Engineer's Guide</U> by Tanya Reilly is a good resource to explore the role in depth. But to fully understand their purpose it helps to experience a challenge from a Principal Engineer in your own work. Because as Seraph says in <u>The Matrix Reloaded</u>:
 
->>> "You Never Really Know A Man Until You Fight Him"
+> You Never Really Know A Man Until You Fight Him - Seraph

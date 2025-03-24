@@ -1,10 +1,7 @@
-
-
-## Build vs Buy: Managed MLOps 
-
+## Build vs Buy Decisions in MLOps 
 
 ### Cloud Native
-A lot of people want the ability to change cloud providers, if they ever go rogue and start gouging prices. At Amazon, this is less of a concern, but Kubeflow allows you to port over to other Clouds. 
+A lot of people want the ability to change cloud providers, in case pricing balances shift towards one cloud provider or another. 
 
 ### Setup Time
 To Deploy Kubeflow on AWS, we must: 
@@ -14,14 +11,21 @@ To Deploy Kubeflow on AWS, we must:
 
 ## Cost
 
-Sagemaker instances vs EC2 GPU
+Sagemaker instances vs EC2. Cloud Natives put a premium on 
 
 ## Toolkit
+
+## Problem Fit
+* Do you need to reference simulation? 
+
+## Intangibles
+* Cloud native vs agnostic
+* Vender lock-in
 
 ### Tracking, Monitoring and Versioning
 
 ### What The Hell Is A Model Artifact? 
-
+Sagemaker -  a 
 
 ### 
 
@@ -46,3 +50,6 @@ In both cases, we want data scientists in the GUI, working on interesting proble
 #### Sagemaker Terraform
 
 #### Kubeflow Terraform
+
+#### Infrastructure As Code - CDK Vs Terraform in AWS
+

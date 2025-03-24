@@ -7,10 +7,12 @@ Why Do So many companies hire ML Platform Engineers, when all the major cloud pr
 ### Knowledge is Becoming Commodotized. Process Wins
 
 ### The Holy Iteration Cycle
-* Anything that takes scientists out of the iteration cycle is wasted
+* Anything that takes scientists out of the research iteration cycle is wasted
 * Recreating features, pulling data, writing evaluation code is all undifferentiated work
 * The more scientists have to build, the more things go wrong
 * Think like a scientist to understand what to abstract and what to let them modify
+
+That's why there's constantly new tools like Hydra
 
 ### What Should Be Automated and What Shouldn't Varies By Problem Case
 * A tabular ML business problem might have a very limited 
