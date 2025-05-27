@@ -74,3 +74,8 @@ A crucial point about choosing a tool is ensuring one stays abreast of innovatio
 
 
 ### Code
+
+### Other Considerations
+* Is your use case requiring 
+* What is a model artifact in your use case?
+*  
