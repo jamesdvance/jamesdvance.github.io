@@ -10,6 +10,8 @@ triggered by new information as you continue to learn more about the situation.
 * Act - Carry out the decision. As you judge the effects of your action, you circle back to
 “Observe” in a continuous loop.
 
+In that framework, cameras allow us to observe, and computer vision allows us to orient. Eventually, 
+
 ## Modern Computer Vision and 'Physical AI'
 Just as sight is crucial in how humans deal with situations in real life, video-based AI presents infinite possibilities for applications, provided computer vision systems can demonstrate sufficient situational understanding. Recently, VLMs (Visual Language Models) and MLLMs (Multi-Modal Large Language Models) have demonstrated much higher understanding than traditional computer vision tasks of detecting objects or classifying frames. Companies like SpotAI [2] have lept into action, using VLMs as video 'agents' to observe, understand and take some action based on this understanding. 
 

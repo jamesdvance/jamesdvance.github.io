@@ -1,4 +1,6 @@
+# Barely Groking CUDA
 
+As an ML Engineer most of my job is focused on building systems and infrastructure. Therefore
 
 ## Threads, Blocks, and Grids
 
@@ -23,7 +25,7 @@ __global__ void vector_add(const float* A, const float* B, float* C, int N) {
 }
 
 // A, B, C are device pointers (i.e. pointers to memory on the GPU)
-void solve(const float* A, const float* B, float* C, int N) {
+void solve(const float* A, const float* B, float* C, int N) {S
     int threadsPerBlock = 256;
     int blocksPerGrid = (N + threadsPerBlock - 1) / threadsPerBlock;
 
@@ -31,6 +33,8 @@ void solve(const float* A, const float* B, float* C, int N) {
     cudaDeviceSynchronize();
 }
 ```
+
+## Column / Row Major
 
 ## Vectors To Speedup GPU Code
 

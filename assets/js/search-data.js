@@ -41,15 +41,15 @@ ninja.data = [{
             window.location.href = "/blog/2025/principal_engineers_paradigm/";
           
         },
-      },{id: "post-a-personal-project-mlops-platform",
+      },{id: "post-80-20-mlops",
         
-          title: "A Personal Project MLOps Platform",
+          title: "80/20 MLOps",
         
         description: "A Basic MLOps Setup With Kubeflow",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/a-personal-project-mlops-platform/";
+            window.location.href = "/blog/2024/80_20_MLOPS/";
           
         },
       },{id: "post-charming-algorithms-1-39-3sum-closest-39",
