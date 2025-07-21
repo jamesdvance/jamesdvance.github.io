@@ -152,6 +152,7 @@ collections:
     output: true
   projects:
     output: true
+    permalink: /projects/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -626,13 +627,13 @@ jekyll_get_json:
 jsonresume:
   - basics
   - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
+  # - education
+  # - publications
+  # - projects
+  # - volunteer
+  # - awards
   - certificates
   - skills
-  - languages
+  # - languages
   - interests
-  - references
+  # - references

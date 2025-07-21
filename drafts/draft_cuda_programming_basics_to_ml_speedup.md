@@ -6,6 +6,9 @@ As an ML Engineer most of my job is focused on building systems and infrastructu
 
 There are N threads per block (highly device dependent - often 256). There are 
 
+## Outline
+
+# Mimick lecture 1 of CUDA mode - show how to do a simple Pytorch speedup
 
 ## The Indices
 
