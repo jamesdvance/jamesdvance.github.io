@@ -83,12 +83,12 @@ ninja.data = [{
           title: 'PlanYourMeals.com 2017 - 2020',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects";
             },},{id: "projects-dronedog",
           title: 'DroneDog',
           description: "VLMs and navigation for home security",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects";
             },},{
         id: 'social-email',
         title: 'email',
