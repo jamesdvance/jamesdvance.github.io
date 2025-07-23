@@ -23,13 +23,13 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="Get Optimized Plans" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/single_day_solve_reframed.gif" title="Get Optimized Plans" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/restaurants_two_resolves.gif" title="Customize Meals For Restaurants" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/adjust_amounts_better.gif" title="Adjust Existing Plans" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/adjust_amounts_better.gif" title="Adjust Existing Plans" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
