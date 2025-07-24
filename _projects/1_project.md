@@ -21,29 +21,6 @@ To give your project a background in the portfolio page, just add the img tag to
     img: /assets/img/12.jpg
     ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/single_day_solve_reframed.gif" title="Get Optimized Plans" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/adjust_amounts_better.gif" title="Adjust Existing Plans" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Plan Your Meals let you build nutrieant-optimized plans, customize for restaurants and adjust amounts.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
 PlanYourMeals was a passion project that grew out of a frustration with existing calorie trackers like MyFitnessPal and the automatic meal planner EatThisMuch. Like so many people, my early efforts going to gym were limited until that realization that diet is 80% of success. The bottom line? Muscles grow much easier in the precesnse of a caloric surplus and fat only disappears in the precense of a deficit. Working out with controlling eating leads to a lot of effort with marginly noticeable results. 
 
 Originally, I used MyFitnessPal to track calories, but could rarely get a perfect macro fit. Often, I'd find myself out of ideas while trying to find a source of protein for dinner after 'spending' too many carbs and fats at breakfast and lunch. I nexted tried EatThisMuch, a programatic meal planner that combined different recipes to make a macro-optimized daily plan. Although I had paid for the pro version and spent time setting up a menu, the plans I got back were always frustrating - for example, three different dishes for breakfast, each involving prep and cook. Then, a preparead lunch (who has time?) and a vegetable dish as a 'snack'. 
