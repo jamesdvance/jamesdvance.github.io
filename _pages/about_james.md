@@ -1,0 +1,1 @@
+Hey, I'm James, a Machine Learning Engineer. I currently work to deploy effective machine leacrning systems for Amazon's High Volume Hiring group. I'm especially interested in learning how to run ML models leaner and faster and will share these learnings on my blog. 
