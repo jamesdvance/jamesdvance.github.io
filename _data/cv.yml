@@ -4,7 +4,7 @@
     - name: Full Name
       value: James Vance
     - name: Languages
-      value: English, Broken French
+      value: English
 
 - title: Education
   type: time_table
