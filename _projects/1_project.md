@@ -14,7 +14,14 @@ PlanYourMeals was a passion project that grew out of a frustration with existing
 
 Originally, I used MyFitnessPal to track calories, but could rarely get a perfect macro fit. Often, I'd find myself out of ideas while trying to find a source of protein for dinner after 'spending' too many carbs and fats at breakfast and lunch. I nexted tried EatThisMuch, a programatic meal planner that combined different recipes to make a macro-optimized daily plan. Although I had paid for the pro version and spent time setting up a menu, the plans I got back were always frustrating - for example, three different dishes for breakfast, each involving prep and cook. Then, a preparead lunch (who has time?) and a vegetable dish as a 'snack'. 
 
-The first feature I implemented was the ability to 
+The first feature I implemented was the ability to solve a single day 
+<!-- 
+<img src="" /> -->
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+
+Yes, I learned and implement React with Redux for state management, drag-and-drop in react. 
 
 My concept for planyourmeals was a planner that would be able to create plans that adapted to how I might actually during the day, using my frequent meals and snacks most frequently, and that would allow me to make mid-day changes, for example if I no longer had time to cook and wanted to go to Chipotle instead. 
 
