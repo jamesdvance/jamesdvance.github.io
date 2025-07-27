@@ -9,26 +9,26 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-side-projects",
-          title: "side projects",
-          description: "Things I&#39;ve worked on in my spare time, for fun or for learning",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "cv",
           description: "Professional history and CV",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
+          },
+        },{id: "nav-side-projects",
+          title: "side projects",
+          description: "Things I&#39;ve worked on in my spare time, for fun and learning",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
           },
         },{id: "post-the-principal-engineer-paradigm",
         
@@ -79,16 +79,16 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-planyourmeals-com-2017-2020",
-          title: 'PlanYourMeals.com 2017 - 2020',
-          description: "with background image",
+          section: "News",},{id: "projects-planyourmeals-com",
+          title: 'PlanYourMeals.com',
+          description: "A full stack, science-based meal planning webapp",
           section: "Projects",handler: () => {
-              window.location.href = "/projects";
+              window.location.href = "/projects/1_project/";
             },},{id: "projects-dronedog",
           title: 'DroneDog',
           description: "VLMs and navigation for home security",
           section: "Projects",handler: () => {
-              window.location.href = "/projects";
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',
