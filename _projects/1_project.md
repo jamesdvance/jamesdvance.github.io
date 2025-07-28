@@ -22,37 +22,20 @@ PlanYourMeals was a passion project that grew out of a frustration with the avai
 Here are some demos of what implemented: 
 
 ### Single Day Solve
-
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
-    </div>
+{% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
 
 
 ### Starbucks for Breakfast, Chipotle For Lunch
+{% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
 
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
 
 ### Leave Me Leftovers For Lunch The Next Day
-
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/leftovers_2.gif" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-
+{% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/leftovers_2.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
 
 ### The Core Model 
 
 I first built an optimization model that would assign integer amounts of realistic serving sizes per food item. The following code sets up a Pyomo modeling object with the following problem. To see how  this is implemented in code, see Apendix 1. 
 
-```
-
-7. Variable Domains
-
-$x_{i,d,m} \geq 0$ (continuous)
-$y_{i,d,m} \in {0, 1}$ (binary)
-$z_{d,m,c} \in {0, 1}$ (binary)
-```
 
 
 1. 
