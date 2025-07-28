@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-side-projects",
-          title: "side projects",
+        },{id: "nav-projects",
+          title: "projects",
           description: "Things I&#39;ve worked on in my spare time, for fun and learning",
           section: "Navigation",
           handler: () => {
@@ -84,11 +84,6 @@ ninja.data = [{
           description: "A full stack, science-based meal planning webapp",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-dronedog",
-          title: 'DroneDog',
-          description: "VLMs and navigation for home security",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',
