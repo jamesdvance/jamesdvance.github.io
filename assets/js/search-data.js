@@ -79,8 +79,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-planyourmeals-com",
-          title: 'PlanYourMeals.com',
+          section: "News",},{id: "projects-planyourmeals-com-2017-2020",
+          title: 'PlanYourMeals.com (2017-2020)',
           description: "A full stack, science-based meal planning webapp",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
