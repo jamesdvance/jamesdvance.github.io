@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PlanYourMeals.com
+title: PlanYourMeals.com (2017-2020)
 description: A full stack, science-based meal planning webapp
 img: assets/img/planyourmeals/FBProfPic.jpg
 importance: 1
@@ -8,9 +8,7 @@ category: side projects
 related_publications: false
 ---
 
-# PlanYouMeals (2017 - 2020)
-
-PlanYourMeals was a passion project that grew out of a frustration with the available options (MyFitnessPal, MyFitnessPal, EatThisMuch) for tracking and planning nutrient-precise meals. Eventually, I created a React-frontend, Django-backend web application, powered by a standalone optimization (as in mixed integer programming) service. It has a wide breadth of features:
+PlanYourMeals was a passion project that grew out of a frustration with the available options (MyFitnessPal, MyFitnessPal, EatThisMuch) for tracking and planning nutrient-precise meals. Eventually, I created a [React-frontend](https://github.com/jamesdvance/planyourmeals_react), [Django-backend web application](https://github.com/jamesdvance/planyourmealsapi), powered by a [standalone optimization](https://github.com/jamesdvance/planyourmealsapi/tree/master/autoplanner) (as in mixed integer programming) service. It has a wide breadth of features:
 * Precise meal plans across breakfast, lunch, dinner, and snacks for a single day, multiple days or an entire week
 * Ability to search and log meals, then complete the remaining meals to fit the nutrient goals
 * Ability to select and deselect nutrients, not just macros, for each solve
@@ -25,10 +23,22 @@ Here are some demos of what implemented:
 
 ### Single Day Solve
 
-    <div class="col-sm mt-3 mt-md-0">ssets/img/planyourmeals/single_day_solve_reframed.gif
-        {% include figure.liquid loading="eager" path="a" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
     </div>
 
+
+### Starbucks for Breakfast, Chipotle For Lunch
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+
+### Leave Me Leftovers For Lunch The Next Day
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/leftovers_2.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 
 
 ### The Core Model 

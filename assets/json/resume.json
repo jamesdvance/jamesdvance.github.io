@@ -20,7 +20,10 @@
       "position": "Sr Machine Learning Engineer",
       "startDate": "2024-12-01",
       "summary": "Sr MLE leading major designs of MLOps infrastructure and ML production pipelines",
-      "highlights": ["RRefactored scientist’s complex probabilistic model to utilize gpu with cupy.  Achieved over 50% reduction in inference time, fixing repeated timeout issues in the deployment"]
+      "highlights": [
+        "Refactored scientist’s complex probabilistic model to utilize gpu with cupy.  Achieved over 50% reduction in inference time, fixing repeated timeout issues in the deployment", 
+        ""
+    ]
     }
   ],
   "education": [
