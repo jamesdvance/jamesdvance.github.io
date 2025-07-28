@@ -4,49 +4,39 @@ title: PlanYourMeals.com
 description: A full stack, science-based meal planning webapp
 img: assets/img/planyourmeals/FBProfPic.jpg
 importance: 1
-category: software
+category: side projects
 related_publications: false
 ---
 
 # PlanYouMeals (2017 - 2020)
 
-PlanYourMeals was a passion project that grew out of a frustration with existing calorie trackers like MyFitnessPal and the automatic meal planner EatThisMuch. Like so many people, my early efforts going to gym were limited until that realization that diet is 80% of success. The bottom line? Muscles grow much easier in the precesnse of a caloric surplus and fat only disappears in the precense of a deficit. Working out with controlling eating leads to a lot of effort with marginly noticeable results. 
+PlanYourMeals was a passion project that grew out of a frustration with the available options (MyFitnessPal, MyFitnessPal, EatThisMuch) for tracking and planning nutrient-precise meals. Eventually, I created a React-frontend, Django-backend web application, powered by a standalone optimization (as in mixed integer programming) service. It has a wide breadth of features:
+* Precise meal plans across breakfast, lunch, dinner, and snacks for a single day, multiple days or an entire week
+* Ability to search and log meals, then complete the remaining meals to fit the nutrient goals
+* Ability to select and deselect nutrients, not just macros, for each solve
+* Ability to operate on existing foods and adjust amounts to fit goals
+* Ability to switch 'menus' per meal, to accomodate restaurant visits, different situations (aka cookouts, cafeterias)
+* Search with autocomplete, a drag-and-drop interface, and individual food item modals
+* Ability to see all viable alternatives to a food that will still fit within plan
+* Ability to undo solves and see all possible solves
+* Ability to design 'whole means' (such as a quiche) as well as main courses and sides, so that meal plans are realistic
 
-Originally, I used MyFitnessPal to track calories, but could rarely get a perfect macro fit. Often, I'd find myself out of ideas while trying to find a source of protein for dinner after 'spending' too many carbs and fats at breakfast and lunch. I nexted tried EatThisMuch, a programatic meal planner that combined different recipes to make a macro-optimized daily plan. Although I had paid for the pro version and spent time setting up a menu, the plans I got back were always frustrating - for example, three different dishes for breakfast, each involving prep and cook. Then, a preparead lunch (who has time?) and a vegetable dish as a 'snack'. 
+Here are some demos of what implemented: 
 
-The first feature I implemented was the ability to solve a single day 
-<!-- 
-<img src="" /> -->
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+### Single Day Solve
+
+    <div class="col-sm mt-3 mt-md-0">ssets/img/planyourmeals/single_day_solve_reframed.gif
+        {% include figure.liquid loading="eager" path="a" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
     </div>
 
-Yes, I learned and implement React with Redux for state management, drag-and-drop in react. 
 
-My concept for planyourmeals was a planner that would be able to create plans that adapted to how I might actually during the day, using my frequent meals and snacks most frequently, and that would allow me to make mid-day changes, for example if I no longer had time to cook and wanted to go to Chipotle instead. 
 
 ### The Core Model 
 
 I first built an optimization model that would assign integer amounts of realistic serving sizes per food item. The following code sets up a Pyomo modeling object with the following problem. To see how  this is implemented in code, see Apendix 1. 
 
 ```
-Objective Function
-min⁡∑i∈I∑d∈D∑m∈Mpi⋅yi,d,m\min \sum_{i \in I} \sum_{d \in D} \sum_{m \in M} p_i \cdot y_{i,d,m}min∑i∈I​∑d∈D​∑m∈M​pi​⋅yi,d,m​
-Constraints
-1. Required Meals
-∑i∈Iyi,d,m≥requiredm∀d∈D,m∈M\sum_{i \in I} y_{i,d,m} \geq required_m \quad \forall d \in D, m \in M∑i∈I​yi,d,m​≥requiredm​∀d∈D,m∈M
-2. Serving Amount Bounds
-0≤xi,d,m≤max_servingsi⋅yi,d,m∀i∈I,d∈D,m∈M0 \leq x_{i,d,m} \leq max\_servings_i \cdot y_{i,d,m} \quad \forall i \in I, d \in D, m \in M0≤xi,d,m​≤max_servingsi​⋅yi,d,m​∀i∈I,d∈D,m∈M
-3. Big M Constraint (Binary Variable Linkage)
-xi,d,m≤M⋅yi,d,m∀i∈I,d∈D,m∈Mx_{i,d,m} \leq M \cdot y_{i,d,m} \quad \forall i \in I, d \in D, m \in Mxi,d,m​≤M⋅yi,d,m​∀i∈I,d∈D,m∈M
-4. Maximum Items per Meal
-∑i∈Iyi,d,m≤max_itemsm∀d∈D,m∈M\sum_{i \in I} y_{i,d,m} \leq max\_items_m \quad \forall d \in D, m \in M∑i∈I​yi,d,m​≤max_itemsm​∀d∈D,m∈M
-5. No Food Repetition Across Days
-∑d∈D∑m∈Myi,d,m≤1∀i∈I\sum_{d \in D} \sum_{m \in M} y_{i,d,m} \leq 1 \quad \forall i \in I∑d∈D​∑m∈M​yi,d,m​≤1∀i∈I
-6. Food Class Disjunction
-For each food class $c$, if any food from that class is assigned to a meal, then the meal must be "committed" to that class:
-yi,d,m≤zd,m,c∀i∈I,d∈D,m∈M,c∈C:classi,c=1y_{i,d,m} \leq z_{d,m,c} \quad \forall i \in I, d \in D, m \in M, c \in C : class_{i,c} = 1yi,d,m​≤zd,m,c​∀i∈I,d∈D,m∈M,c∈C:classi,c​=1
-∑i∈I:classi,c=1yi,d,m≥zd,m,c∀d∈D,m∈M,c∈C\sum_{i \in I : class_{i,c} = 1} y_{i,d,m} \geq z_{d,m,c} \quad \forall d \in D, m \in M, c \in C∑i∈I:classi,c​=1​yi,d,m​≥zd,m,c​∀d∈D,m∈M,c∈C
+
 7. Variable Domains
 
 $x_{i,d,m} \geq 0$ (continuous)

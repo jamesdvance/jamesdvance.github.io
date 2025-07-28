@@ -1,11 +1,11 @@
 ---
 layout: page
-title: side projects
+title: projects
 permalink: /projects/
 description: Things I've worked on in my spare time, for fun and learning
 nav: true
 nav_order: 2
-display_categories: [software]
+display_categories: [side projects]
 horizontal: false
 ---
 
