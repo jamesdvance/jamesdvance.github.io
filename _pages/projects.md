@@ -6,7 +6,7 @@ description: Things I've worked on in my spare time, for fun and learning
 nav: true
 nav_order: 2
 display_categories: [side projects]
-horizontal: false
+horizontal: true
 ---
 
 
@@ -33,7 +33,7 @@ horizontal: false
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
-    {% endfor %}
+    {% endfor %}false
   </div>
   {% endif %}
   {% endfor %}
