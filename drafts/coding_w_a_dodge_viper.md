@@ -1,4 +1,4 @@
-# My Ego Vs LLMs
+# Taming Code Velocity
 
 
 Agentic coding tools are like dodge vipers
