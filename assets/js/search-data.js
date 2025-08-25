@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-the-principal-engineer-paradigm",
+        },{id: "post-re-ranking-after-rag",
+        
+          title: "Re-Ranking After RAG",
+        
+        description: "Making Every Context Token Count",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/reranking-rag-techniques/";
+          
+        },
+      },{id: "post-the-principal-engineer-paradigm",
         
           title: "The Principal Engineer Paradigm",
         
