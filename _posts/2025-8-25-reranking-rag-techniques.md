@@ -52,9 +52,8 @@ A highly common model used in re-ranking tasks for RAG is the Cross Encoder. The
 ### BiEncoder
 
 
-
 ## Example: A Kaggle Assistant
 
-## 
+Kaggle competitions pit machine learning scientists against one another to get to peak model performance. As learning tools, they're incredible resources to learn about cutting edge techniques in a given domain. In particular, the notebooks 
 
 ## Self-Improvment Mechanisms
