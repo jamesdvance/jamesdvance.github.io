@@ -17,8 +17,8 @@ vs
 "The function will store the user data by timestamp before displaying it."
 
 At a high-level our re-ranker fits into this simple RAG chatbot:
-<img src="rerankers/RAG_Reranker.drawio.png" />
 
+{% include figure.liquid loading="eager" path="assets/img/rerankers/RAG_Reranker.drawio.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Shifting From Recall To Precision 
 The embeddings similarity search focuses on Recall - its goal is to maximize the largest percentage of the total number of relevant chunks in the database that are returned. In simpler terms, it wishes to maximize the True Positives. The re-ranker conversely optimizes for precision. Of the results returned to the agent, the re-ranker wants to maximize the % that are relevant. It aims to minimize False Positives. In doing so, re-rankers are critical to ensuring agents avoid unnecessary noise and [context rot](https://research.trychroma.com/context-rot). 
@@ -45,7 +45,7 @@ In a real-world application, re-ranking datasets can be generated from productio
 ## Common Models
 
 ### Cross-Encoder
-A highly common model used in re-ranking tasks for RAG is the Cross Encoder. The Cross Encoder ouputs
+A highly common model used in re-ranking tasks for RAG is the Cross Encoder. The Cross Encoder takes two different 
 
 ### Ranking-Specialized LLMs
 
@@ -57,3 +57,7 @@ A highly common model used in re-ranking tasks for RAG is the Cross Encoder. The
 Kaggle competitions pit machine learning scientists against one another to get to peak model performance. As learning tools, they're incredible resources to learn about cutting edge techniques in a given domain. In particular, the notebooks 
 
 ## Self-Improvment Mechanisms
+
+
+### Resources
+[Speeding Up Cross-Encoders](https://www.ntropy.com/blog/speeding-up-cross-encoders-for-both-training-and-inference)
