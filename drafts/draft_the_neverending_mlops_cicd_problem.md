@@ -1,6 +1,0 @@
-# Every MLOps
-
-
-
-### Content
-
