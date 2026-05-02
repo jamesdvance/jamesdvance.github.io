@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ruby --version)",
+      "Bash(gem --version)",
+      "Bash(bundle --version)",
+      "PowerShell(gem *)",
+      "PowerShell(winget install *)",
+      "PowerShell(cmd /c \"dir C:\\\\ /b /ad\" | Select-String -Pattern \"Ruby\")",
+      "PowerShell(bundle install *)",
+      "PowerShell(bundle exec *)",
+      "PowerShell(py *)",
+      "PowerShell(python -m pip install --user jupyter nbconvert 2>&1 | Select-Object -Last 20)",
+      "Bash(grep -qE \"Server address|Server running|done in|Error.*backtrace|Errno|\\\\\\\\bjekyll[^a-z].*error\" \"C:\\\\Users\\\\james\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-james-Desktop-jamesdvance-github-io\\\\58448460-c181-4a7b-8e3c-e7b4e521ce4c\\\\tasks\\\\brgpxzyry.output\")"
+    ]
+  }
+}

@@ -3,39 +3,154 @@
   contents:
     - name: Full Name
       value: James Vance
+    - name: Email
+      value: james.dvance@gmail.com
+    - name: Phone
+      value: (434) 989-9689
     - name: Languages
       value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: Master's
+    - title: Master of Engineering, Systems Engineering (Cum Laude)
       institution: University of Virginia
       year: 2015
       description:
-        - Master's in 'Systems Engineering' which is UVA-speak for Operations Research / Industrial Engineering
+        - UVA's Systems Engineering program is equivalent to Operations Research / Industrial Engineering
+    - title: Bachelor's, English
+      institution: University of Kentucky
+      year: 2010
+      description:
+        - Coursework in Math (through Differential Equations), University Physics 2, intro CS, and Statistics (3.9 GPA in these)
 
 - title: Experience
   type: time_table
   contents:
-    - title: Machine Learning Engineer
+    - title: Machine Learning Engineer III (L6)
+      institution: Amazon
+      year: 2024 - Present
+      description:
+        - "ML Platform & Infrastructure: Designed and deployed reusable Infrastructure-as-Code templates for secure, production-ready ML projects, including S3-based vector stores and strict network/permission controls for critical security classification"
+        - "Large-Scale Training & Inference: Led design and development of a 1B-record, high-scale ML training and inference pipeline driving hiring decisions for over 500k positions annually"
+        - "Model & Training Optimization: Refactored a complex probabilistic ML model for a 50% latency reduction through GPU utilization improvements"
+        - "Observability & Experiment Tracking: Led creation of an 'Intelligent Core' suite of unified evaluation and observability tools for production ML systems, including experiment tracking, prompt versioning, and unified trace capture"
+        - "MLOps/CI/CD: Designed a novel 'model replicator' feature enabling E2E integration testing of model artifacts via traditional CI/CD pipelines immediately following model training"
+
+    - title: Machine Learning Engineer II (L5)
       institution: Amazon
       year: 2022 - 2024
       description:
-        - MLOps
-        - Model deployment
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Co-developed reusable MLOps IaC library to deploy orchestration, networking, and other gaps in the SageMaker offering; published as the default MLOps template, used by over 200 Amazon internal teams
+        - Led engineering and MLOps for a live schedule recommendation model on the Amazon career site; increased schedule/shift CTR by 7% and met 200ms P90 response SLA
+        - Launched and maintained 'Demand Model Service', a multi-region event-driven labor demand prediction service fed by data streams of candidate behavior, application status, and schedule changes
+        - Re-architected Custom Reoccurring Schedules service using an optimization model to generate dynamic schedules; simplified original infrastructure from six event-driven APIs to one
+        - Refactored and re-architected 4 ML services for operational excellence, achieving an average 45% reduction in Sev-1/Sev-2 outages per quarter in 2023
+        - Led internal GenAI POC 'Change Management Generation' using AWS Bedrock and RAG knowledge bases
+        - Optimized a high-volume recommender model training pipeline, reducing runtime from 36 to 8 hours (78% reduction) via hybrid parallelism and model-based sampling
+        - Mentored intern for four months prior to his successful conversion to full-time SDE
+
+    - title: Machine Learning Engineer
+      institution: Compare.com
+      year: 2021 - 2022
+      description:
+        - Improved performance of vendor-generated customer routing model by 15%
+        - Developed greenfield ranking algorithm driving a $40k/month (8%) revenue uplift over status quo
+        - Developed and deployed multiple model endpoints to optimize revenue on Compare.com
+        - Re-architected deployment environment and optimized model latency to achieve 100% uptime over 6 months
+        - Implemented data drift logging/monitoring, MLOps, and repeatable model development workflows
+        - Automated CI/CD with Azure DevOps pipelines
+
+    - title: Associate Principal Data Scientist
+      institution: Huntington Ingalls Incorporated (formerly Alion Science)
+      year: 2020 - 2021
+      description:
+        - Led team of data scientists to develop LSTM-based anomaly detection and rare event prediction application to catch training and simulation failures before they arose
+        - Developed and architected anomaly detection and issue classification models on time-series network, machine, and simulation system data using TensorFlow with Spark on Hadoop for data processing
+        - Designed user interface and data visualizations for routing server network and individual simulation programs
+        - Led cross-functional team of data scientists and software engineers on a data visualization and scorecarding tool for Navy training simulations; architected DB schema (Postgres), frontend (React), and backend (Flask)
+
+    - title: Data Scientist, Operations Research (Revenue Management)
+      institution: Marriott International
+      year: 2019 - 2020
+      description:
+        - Developed improved forecast framework with better performance and measurement via reduced data latency
+        - Provided analysis on the previously opaque effect of Online Travel Agency pricing strategies to Revenue Management VPs
+        - Provided ongoing help in automation, documentation, and back-analysis for the entire One Yield pricing system preceding its move from on-prem servers to AWS cloud and Apache Spark
+        - Led successful effort to rewrite and refactor Marriott's Group Pricing Optimizer from SAS to Python for the cloud
+
+    - title: Sr. Manager, Advanced Data Science
+      institution: Marriott International
+      year: 2018 - 2019
+      description:
+        - Lead data scientist for 'Customer Lifetime Value' project; developed model end-to-end with 5% accuracy improvement over existing
+        - Presented Orchestration process and findings at Townhall event to highlight progress in new framework
+        - Led 'Project Pyramid', a CEO-visible project that re-wrote franchise fee structure for all 7000+ properties worldwide using convex optimization
+        - Conceptualized and created live business/leisure predictive model for Abandoned Search program using browsing session features
+
+    - title: Manager, Advanced Data Science
+      institution: Marriott International
+      year: 2016 - 2018
+      description:
+        - Stood up a comprehensive control group strategy for Marketing Orchestration, including randomization and stratification criteria, operational SQL queries, and IT/analytics/management roles and responsibilities
+        - Established novel measurement framework and testing plans for key Orchestration programs
+        - Created automated incremental revenue and performance dashboarding using R to access SQL, format and append data, and perform significance testing logic before exporting to Tableau
+
+    - title: Sr. Professional - Business Process Reengineering
+      institution: CSRA
+      year: 2015 - 2016
+      description:
+        - Analyzed cost savings and developed financial forecasts
+
+    - title: Sr. Business Analyst
+      institution: Delivery Agent
+      year: 2015
+      description:
+        - Created buyer segmentation analysis using clustering techniques for email targeting program
+        - Created warehouse staffing optimization model using linear programming and forecasting
+
+    - title: Sales Analytics Manager
+      institution: Concordia Healthcare, USA
+      year: 2013 - 2015
+      description:
+        - Managed sales analytics including sales targeting, marketing strategies, and process optimizations
+        - Developed coupon pricing strategy using nonlinear programming, implemented on a $90mm/year product
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python
+        - C++
+        - TypeScript
+    - title: Frameworks & Tools
+      items:
+        - PyTorch
+        - AWS CDK
+        - Terraform
+        - Spark
+        - Kubernetes
+        - Kubeflow
+        - Azure
+        - AWS
+        - MLFlow
+        - Hugging Face
 
 - title: Certifications
   type: time_table
   contents:
     - year: 2018
-      items: 
-        - AWS Solutions Architect, Asc
+      items:
+        - AWS Certified Solutions Architect - Associate
     - year: 2020
-      items: 
-        - Security+
-        - Linux +
+      items:
+        - CompTIA Security+ (005)
+        - CompTIA Linux+
+
+- title: Links
+  type: list
+  contents:
+    - <a href="https://jamesdvance.com">jamesdvance.com</a>
+    - <a href="https://linkedin.com/in/jamesdvance">linkedin.com/in/jamesdvance</a>
+    - <a href="https://github.com/jamesdvance">github.com/jamesdvance</a>
