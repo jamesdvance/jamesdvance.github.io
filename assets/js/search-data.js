@@ -95,6 +95,16 @@ ninja.data = [{
           description: "A full stack, science-based meal planning webapp",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-hit-amp-run-detection-generating-realistic-synthetic-data-for-vlm-39-s",
+          title: 'Hit &amp;amp; Run Detection - Generating Realistic Synthetic Data For VLM&amp;#39;s',
+          description: "A synthetic data pipeline for benchmarking vision-language models on detecting hit and runs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-monitoring",
+          title: 'Monitoring',
+          description: "A synthetic data pipeline for benchmarking vision-language models on warehouse safety violation detection",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-email',
         title: 'email',
