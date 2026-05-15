@@ -11,7 +11,14 @@
       "PowerShell(bundle exec *)",
       "PowerShell(py *)",
       "PowerShell(python -m pip install --user jupyter nbconvert 2>&1 | Select-Object -Last 20)",
-      "Bash(grep -qE \"Server address|Server running|done in|Error.*backtrace|Errno|\\\\\\\\bjekyll[^a-z].*error\" \"C:\\\\Users\\\\james\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-james-Desktop-jamesdvance-github-io\\\\58448460-c181-4a7b-8e3c-e7b4e521ce4c\\\\tasks\\\\brgpxzyry.output\")"
+      "Bash(grep -qE \"Server address|Server running|done in|Error.*backtrace|Errno|\\\\\\\\bjekyll[^a-z].*error\" \"C:\\\\Users\\\\james\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-james-Desktop-jamesdvance-github-io\\\\58448460-c181-4a7b-8e3c-e7b4e521ce4c\\\\tasks\\\\brgpxzyry.output\")",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,codec_type,width,height,pix_fmt -of default=noprint_wrappers=0 \"C:/Users/james/Desktop/jamesdvance.github.io/assets/video/hit_and_run_1.mp4\")",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,codec_type,width,height,pix_fmt -of default=noprint_wrappers=0 \"C:/Users/james/Desktop/jamesdvance.github.io/assets/video/hit_and_run_2.mp4\")",
+      "Bash(ffprobe -v error -show_entries stream=codec_name,codec_type -of default=noprint_wrappers=0 \"C:/Users/james/Desktop/jamesdvance.github.io/assets/video/pexels-engin-akyurt-6069112-960x540-30fps.mp4\")",
+      "Bash(ffmpeg -y -i assets/video/hit_and_run_1.mp4 -map 0:v:0 -map 0:a:0 -c copy -movflags +faststart assets/video/hit_and_run_1.fixed.mp4)",
+      "Bash(ffmpeg -y -i assets/video/hit_and_run_2.mp4 -map 0:v:0 -map 0:a:0 -c copy -movflags +faststart assets/video/hit_and_run_2.fixed.mp4)",
+      "Bash(mv -f hit_and_run_1.fixed.mp4 hit_and_run_1.mp4)",
+      "Bash(mv -f hit_and_run_2.fixed.mp4 hit_and_run_2.mp4)"
     ]
   }
 }
