@@ -20,12 +20,16 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+selected_projects:
+  enabled: true
+  limit: 3 # number of projects to show (sorted by importance)
+
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 4 # leave blank to include all the blog posts
+  limit: 1 # leave blank to include all the blog posts
 ---
 
-Hey, I'm James, a Machine Learning Engineer. I currently work to deploy effective machine learning systems for Amazon's High Volume Hiring group. I'm especially interested in learning how to run ML models leaner and faster and will share these learnings on my blog. 
+Hey, I'm James. I'm currently a Principal Machine Learning Engineer at Paylocity focusing on ML Platforms and infrastructure. I blog on ML Systems at mylsystemspro.com. This blog is for sharing my projects and interests, especially Physical AI. 
 
-In the long run, I'm most excited about the intersection of simulation and reinforcement learning and hope to share more in these areas too. 
+

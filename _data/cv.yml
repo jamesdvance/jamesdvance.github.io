@@ -27,9 +27,15 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Principal Machine Learning Engineer
+      institution: Paylocity
+      year: 2026 - Present
+      description:
+        - TBD
+
     - title: Machine Learning Engineer III (L6)
       institution: Amazon
-      year: 2024 - Present
+      year: 2024 - 2026
       description:
         - "ML Platform & Infrastructure: Designed and deployed reusable Infrastructure-as-Code templates for secure, production-ready ML projects, including S3-based vector stores and strict network/permission controls for critical security classification"
         - "Large-Scale Training & Inference: Led design and development of a 1B-record, high-scale ML training and inference pipeline driving hiring decisions for over 500k positions annually"

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Hit & Run Detection - Generating Realistic Synthetic Data For VLM's
-description: A synthetic data pipeline for benchmarking vision-language models on detecting hit and runs
-img: 
+title: Hit & Run Protection On A Home Security Cam
+description: Detecting hit & run collisions, LPR, and generating synthetic data for evaluation
+img: assets/video/hit_and_run_2.gif
 importance: 2
 category: side projects
 related_publications: false
@@ -63,7 +63,7 @@ The generation pipeline has three stages, each handled by a separate model:
 A few properties make inpainting attractive over text-to-video from scratch:
 
 - **Distribution match.** The unaltered background means the evaluation dataset actually matches the 
-- **Controllable labels.** The prompt is the label. We can rest assured the label will match the 
+- **Controllable labels.** The prompt is the label. We can rest assured the label will match the video
 - **Scalable variation.** Swapping the prompt produces hit-and-runs of different severities (sideswipe vs. head-on, with vs. without debris), and re-running on different source clips covers different times of day and viewing angles.
 
 #### Evaluation Pair Output

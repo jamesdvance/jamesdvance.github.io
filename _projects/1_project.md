@@ -21,24 +21,109 @@ PlanYourMeals was a passion project that grew out of a frustration with the avai
 
 Here are some demos of what implemented: 
 
-### Single Day Solve
-{% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
-
-
-### Starbucks for Breakfast, Chipotle For Lunch
-{% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
-
-
-### Leave Me Leftovers For Lunch The Next Day
-{% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/leftovers_2.gif" title="example image" class="img-fluid rounded z-depth-1 pym-gifs" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/planyourmeals/single_day_solve_reframed.gif" title="Single Day Solve" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/restaurants_two_resolves.gif" title="Starbucks for Breakfast, Chipotle For Lunch" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" url="https://planyourmealsmedia.s3.us-east-1.amazonaws.com/landing_page/leftovers_2.gif" title="Leave Me Leftovers For Lunch The Next Day" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Left: a single day solve. Middle: mixing Starbucks for breakfast and Chipotle for lunch across two resolves. Right: leaving leftovers from one day to be used for lunch the next.
+</div>
 
 ### The Core Model 
 
 I first built an optimization model that would assign integer amounts of realistic serving sizes per food item. The following code sets up a Pyomo modeling object with the following problem. To see how  this is implemented in code, see Apendix 1. 
 
+**Sets**
 
+$$
+\begin{aligned}
+I &= \text{all candidate food items across the planning horizon} \\
+D &= \text{set of days in the plan} \\
+\mathcal{M} &= \{\text{Breakfast}, \text{Lunch}, \text{Dinner}, \text{Snack}\} \\
+I_{d,m} &\subseteq I \quad \text{items available for meal } m \text{ on day } d \\
+I^{\text{wm}}_{d,m},\ I^{\text{mc}}_{d,m},\ I^{\text{si}}_{d,m} &\subseteq I_{d,m} \quad \text{whole-meal, main-course, side-item subsets} \\
+N_d &= \text{nutrients tracked on day } d
+\end{aligned}
+$$
 
-1. 
+**Parameters**
+
+$$
+\begin{aligned}
+r_i &\in \mathbb{R}_{\geq 0} && \text{preference / penalty weight for item } i \\
+u_i &\in \mathbb{Z}_{\geq 0} && \text{max servings of item } i \\
+a_{n,i} &\in \mathbb{R}_{\geq 0} && \text{nutrient } n \text{ per serving of item } i \\
+[\ell_{d,n},\, h_{d,n}] && && \text{daily bounds for nutrient } n \text{ on day } d \\
+[s^{\min}_m,\, s^{\max}_m] && && \text{allowed number of sides for meal } m \\
+n_{\text{snack}} && && \text{max distinct items per snack slot} \\
+M && && \text{big-}M \text{ linking constant}
+\end{aligned}
+$$
+
+**Decision variables**
+
+$$
+x_i \in \mathbb{Z}_{\geq 0}, \quad y_i \in \{0,1\} \qquad \forall\, i \in I
+$$
+
+where $x_i$ is the number of servings of item $i$ and $y_i = \mathbb{1}[x_i > 0]$.
+
+**Objective**
+
+$$
+\min \sum_{i \in I} r_i \, x_i
+$$
+
+**Constraints**
+
+Indicator linkage (big-M) and serving cap:
+
+$$
+x_i \leq M\, y_i, \quad y_i \leq x_i, \quad x_i \leq u_i \qquad \forall\, i \in I
+$$
+
+Daily nutrient envelopes:
+
+$$
+\ell_{d,n} \;\leq\; \sum_{i \in I_d} a_{n,i}\, x_i \;\leq\; h_{d,n} \qquad \forall\, d \in D,\ n \in N_d
+$$
+
+No-repeat within a meal across days, per food identity $(m, t, u)$:
+
+$$
+\sum_{i \in I_{m,t,u}} y_i \;\leq\; 2
+$$
+
+Meal composition — for each non-snack meal $(d,m)$, exactly one of two disjuncts holds:
+
+$$
+\underbrace{\left[\;
+\sum_{i \in I^{\text{wm}}_{d,m}} y_i = 1,\;
+\sum_{i \in I^{\text{mc}}_{d,m}} y_i = 0,\;
+\sum_{i \in I^{\text{si}}_{d,m}} y_i = 0
+\;\right]}_{\text{single whole meal}}
+\;\;\veebar\;\;
+\underbrace{\left[\;
+\sum_{i \in I^{\text{wm}}_{d,m}} y_i = 0,\;
+\sum_{i \in I^{\text{mc}}_{d,m}} y_i = 1,\;
+s^{\min}_m \leq \sum_{i \in I^{\text{si}}_{d,m}} y_i \leq s^{\max}_m
+\;\right]}_{\text{main course + sides}}
+$$
+
+Snack cardinality:
+
+$$
+\sum_{i \in I_{d,\text{Snack}}} y_i \;\leq\; n_{\text{snack}} \qquad \forall\, d \in D
+$$
+
+The disjunction is converted to a MILP via a big-M (Pyomo `gdp.bigm`) transformation before being passed to CBC.
 
 Disclaimer: this code was written from 2017 - 2018 and I may not make the same choices today. See [full code here](https://github.com/jamesdvance/planyourmealsapi/blob/master/autoplanner/autoplan_week.py#L423)
 ```python
