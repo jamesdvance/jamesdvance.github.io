@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-re-ranking-after-rag",
+        },{id: "post-agents-agents-everywhere",
+        
+          title: "Agents, Agents Everywhere",
+        
+        description: "Levels of Orchestration for multi-purpose agents",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/agents-agents-everywhere/";
+          
+        },
+      },{id: "post-re-ranking-after-rag",
         
           title: "Re-Ranking After RAG",
         
@@ -95,14 +106,14 @@ ninja.data = [{
           description: "A full stack, science-based meal planning webapp",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-hit-amp-run-detection-generating-realistic-synthetic-data-for-vlm-39-s",
-          title: 'Hit &amp;amp; Run Detection - Generating Realistic Synthetic Data For VLM&amp;#39;s',
-          description: "A synthetic data pipeline for benchmarking vision-language models on detecting hit and runs",
+            },},{id: "projects-hit-amp-run-protection-on-a-home-security-cam",
+          title: 'Hit &amp;amp; Run Protection On A Home Security Cam',
+          description: "Detecting hit &amp; run collisions, LPR, and generating synthetic data for evaluation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-monitoring",
-          title: 'Monitoring',
-          description: "A synthetic data pipeline for benchmarking vision-language models on warehouse safety violation detection",
+            },},{id: "projects-visual-time-tracking-nudgings",
+          title: 'Visual Time Tracking + Nudgings',
+          description: "A skynet-like webcam that tracks how much I check my phone, deeply focus, talk in meetings and leave my desk",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
